@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  body{
+    color: #f1f1f1;
+    background-color: rgb(1, 0, 81);
+  }
+  
+
+  header {
+    background-color: #333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar .logo span {
+    color: #ff5400;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .contact-btn {
+    background-color: #ff5400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+    flex-wrap: wrap; 
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content span {
+    color: #ff5400;
+  }
+  
+  .hero-content .role {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hire-me {
+    background-color: black;
+    color: white;
+  }
+  
+  .hire-me:hover {
+    background-color: #555;
+  }
+  
+  .experience {
+    background-color: #ff5400;
+    color: white;
+  }
+  
+  .experience:hover {
+    background-color: #e04000;
+  }
+  .hero-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .profile-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 8px solid #ff5400; 
+    box-shadow: 0 0 30px #ff5400; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-image img:hover {
+    transform: scale(1.05); 
+  }
+
+.icon{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+background: transparent;
+border: 2px solid #0ef;
+border-radius: 50%;
+font-size: 20px;
+color: #0ef;
+text-decoration: none;
+text-align: center;
+padding: 0;
+}
+  .icon:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .hero-content {
+      max-width: 80%; 
+      text-align: center;
+    }
+  
+    .hero-content h1 {
+      font-size: 36px;
+    }
+  
+    .hero-content .role {
+      font-size: 28px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 70%; 
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 480px) {
+    header {
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 28px;
+    }
+  
+    .hero-content .role {
+      font-size: 24px;
+    }
+  
+    .btn {
+      width: 90%;
+    }
+  
+    .hero-image img {
+      width: 200px; 
+    }
+  }
+  
